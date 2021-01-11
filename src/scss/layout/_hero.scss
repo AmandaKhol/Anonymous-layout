@@ -1,0 +1,84 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position-x: center;
+  color: $color-title;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    box-sizing: content-box;
+    width: 100%;
+    height: 110px;
+    /*     margin-top: 284px; */
+    margin-bottom: 10px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    font-family: $font-titles;
+    font-size: 42px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.31;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--span {
+      display: block;
+    }
+
+    @include tablet() {
+      height: 212px;
+      /*       margin-top: 340px; */
+      margin-bottom: 20px;
+      font-size: 80px;
+      line-height: 1.33;
+    }
+    @include desktop() {
+      height: 264px;
+      margin-bottom: 0px;
+      text-shadow: 0 2px 5px rgba(153, 67, 67, 0.5);
+      font-size: 100px;
+      line-height: 1.32;
+    }
+  }
+  &__claim {
+    width: 100%;
+    height: 21px;
+    margin-bottom: 45px;
+    font-family: $font-text;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    @include tablet() {
+      height: 32px;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    @include desktop() {
+      height: 32px;
+      font-size: 24px;
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: $color-title;
+    &--image {
+      height: 11.7px;
+      width: 20px;
+    }
+  }
+}

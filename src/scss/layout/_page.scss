@@ -1,3 +1,17 @@
+* {
+  border: 2px solid blue;
+}
+
 .page {
   font-family: $font-text;
+}
+
+.centralcolumn {
+  margin: 0 15px;
+  @include tablet() {
+    margin: 0 39px;
+  }
+  @include desktop() {
+    margin: 0 275px;
+  }
 }
