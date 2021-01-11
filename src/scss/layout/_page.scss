@@ -1,17 +1,13 @@
-* {
-  border: 2px solid blue;
-}
-
 .page {
   font-family: $font-text;
+  scroll-behavior: smooth;
 }
-
 .centralcolumn {
-  margin: 0 15px;
-  @include tablet() {
-    margin: 0 39px;
+  margin: 0 $margin-mobile;
+  @media all and (min-width: 768px) {
+    margin: 0 $margin-tablet;
   }
-  @include desktop() {
-    margin: 0 275px;
+  @media all and (min-width: 1200px) {
+    margin: 0 $margin-desktop;
   }
 }
