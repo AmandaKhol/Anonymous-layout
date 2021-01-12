@@ -1,4 +1,4 @@
-# Módulo 1 - Evaluación final
+# Módulo 1 - Evaluación final.
 
 En este repositorio se encuentran los ficheros generados en la realización de la **Evaluación final del Módulo 1 - Promo L**.
 Para llevar a cabo el desarrollo de los ficheros `.html` y `.scss` se ha empleado el [Adalab - Web starter kit](https://github.com/Adalab/Adalab-web-starter-kit), creado en **node y gulp** por la asociación [Adalab](https://adalab.es/).
