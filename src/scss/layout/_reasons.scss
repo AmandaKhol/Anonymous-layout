@@ -19,6 +19,7 @@
     font-family: $font-titles;
     font-size: 24px;
     font-weight: bold;
+    text-transform: capitalize;
     @include typo-basics;
     line-height: 1.25;
     text-align: center;
@@ -97,9 +98,11 @@
     line-height: 1.67;
     text-align: center;
     color: $color-subtitles;
+    @include tablet() {
+      font-size: 20px;
+    }
     @include desktop() {
       line-height: 1.5;
-      padding: 0 50px;
     }
   }
 }
