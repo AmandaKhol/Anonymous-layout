@@ -1,9 +1,11 @@
 .section__footer {
+  position: relative;
   box-sizing: border-box;
   background-color: $color-background-footer;
   height: 465px;
-
+  padding: 60px 0 60px;
   @include tablet {
+    padding: 45px 0;
     height: 240px;
   }
 }
@@ -14,43 +16,61 @@
   justify-content: flex-end;
   align-items: center;
   text-align: center;
-  color: white;
-  margin-top: 15px;
+  color: $color-basic;
+  text-align: center;
   @include tablet() {
     flex-direction: row-reverse;
     align-items: flex-start;
+    /*    justify-content: space-between; */
   }
   @include desktop {
     margin: 0 370px;
   }
-  &--nav {
-    @include tablet() {
-      flex-grow: 2;
-      display: flex;
-      margin-left: 30px;
-      align-items: flex-start;
-      justify-content: space-between;
-      text-align: left;
-    }
-  }
+
   &--small {
-    /*     margin-bottom: 45px; */
     @include tablet() {
       flex-grow: 1;
       text-align: left;
+      margin-right: 30px;
     }
   }
 }
-
-.nav__out {
-  margin: 30px 0;
-  @include tablet {
-    margin: 0 0 0 30px;
+.footer__nav {
+  @include tablet() {
+    /*     margin-left: 30px; */
+    flex-grow: 2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+  }
+  @include desktop {
+    justify-content: space-between;
+  }
+  &--in {
+    @include tablet {
+      width: calc(100% - 30px);
+    }
+    @include desktop {
+      width: 100%;
+      margin: 0 0 0 30px;
+    }
+  }
+  &--out {
+    margin: 30px 0;
+    @include tablet {
+      width: calc(100% - 30px);
+      margin: 0 0 0 30px;
+    }
+    @include desktop {
+      width: 100%;
+      margin: 0 0 0 30px;
+    }
   }
 }
 .items {
   text-decoration: none;
-  color: white;
+  color: $color_basic;
   text-transform: uppercase;
   @include typo_basics;
   font-size: 16px;
@@ -68,29 +88,28 @@
 }
 
 .footer__button {
+  position: absolute;
+  top: -22.5px;
+  left: calc(50% - 22.5px);
+  z-index: 3;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 45px;
   height: 45px;
-  transform: translate(0, -50%);
-
+  /*   transform: translate(0, -82.5px); */
   border-radius: 22.5px;
-  background-color: $color-title;
+  background-color: $color-basic;
 
   @keyframes intro {
     0% {
-      background-color: $color-title;
+      background-color: $color-basic;
     }
     50% {
       background-color: $color-button;
     }
-    100% {
-      background-color: $color-title;
-    }
   }
-
   animation-name: intro;
   animation-duration: 3s;
   animation-iteration-count: infinite;
