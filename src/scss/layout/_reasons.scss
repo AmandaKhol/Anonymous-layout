@@ -1,12 +1,17 @@
-.reasons {
+.section__reasons {
   background-color: $color-background-main;
   height: 624px;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 1fr);
-  text-align: center;
-  &__title {
-    grid-row: span 1;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  @include tablet() {
+    height: 397px;
+  }
+  @include desktop() {
+    height: 427px;
+  }
+  &--title {
     margin-bottom: 45px;
     font-family: $font-titles;
     font-size: 24px;
@@ -15,29 +20,82 @@
     line-height: 1.25;
     text-align: center;
     color: $color-subtitles;
-  }
-  &__container {
-    grid-row: span 1;
-    margin-bottom: 45px;
-    &--title {
-      margin-bottom: 2px;
-      font-family: $font-titles;
-      font-size: 18px;
-      font-weight: bold;
-      @include typo-basics;
-      line-height: 1.67;
-      text-align: center;
-      color: $color-subtitles;
+    @include tablet() {
+      font-size: 26px;
+      line-height: 1.73;
     }
-    &--paragraph {
-      height: 63px;
-      font-family: $font-text;
-      font-size: 18px;
-      font-weight: normal;
-      @include typo-basics;
-      line-height: 1.67;
-      text-align: center;
-      color: $color-subtitles;
+    @include desktop() {
+      font-size: 32px;
+      line-height: 1.41;
+    }
+  }
+  &--link {
+    @include button-links(184px) {
+      background-color: $color-button;
+      color: $color-title;
+      margin-bottom: 60px;
+    }
+    @include tablet() {
+      width: 210px;
+    }
+    @include desktop() {
+      width: 255px;
+    }
+  }
+}
+
+.reasons__container {
+  margin: 0 55px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  text-align: center;
+  @include tablet() {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: 0;
+  }
+  @include desktop() {
+    margin: 0 85px;
+  }
+
+  &--card {
+    grid-row: span 1;
+    width: 100%;
+    margin-bottom: 45px;
+    text-align: center;
+    @include tablet() {
+      margin-bottom: 60px;
+    }
+  }
+
+  &--title {
+    margin-bottom: 2px;
+    font-family: $font-titles;
+    font-size: 18px;
+    font-weight: bold;
+    @include typo-basics;
+    line-height: 1.67;
+    text-align: center;
+    color: $color-subtitles;
+    @include tablet() {
+      margin-bottom: 14px;
+      font-size: 24px;
+      line-height: 1.25;
+    }
+  }
+  &--paragraph {
+    height: 63px;
+    margin: 0 55px;
+    font-family: $font-text;
+    font-size: 18px;
+    font-weight: normal;
+    @include typo-basics;
+    line-height: 1.67;
+    text-align: center;
+    color: $color-subtitles;
+    @include tablet() {
+      height: 68px;
     }
   }
 }
