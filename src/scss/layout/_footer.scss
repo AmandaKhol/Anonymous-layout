@@ -1,6 +1,9 @@
 .section__footer {
   background-color: $color-background-footer;
   height: 465px;
+  @include tablet {
+    height: 240px;
+  }
 }
 .footer__button {
   position: relative;
@@ -28,10 +31,37 @@
   align-items: center;
   text-align: center;
   color: white;
+  @include tablet() {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+  @include desktop {
+    margin: 0 370px;
+  }
+  &--nav {
+    @include tablet() {
+      flex-grow: 2;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      text-align: left;
+      margin-left: 30px;
+    }
+  }
+  &--small {
+    @include tablet() {
+      flex-grow: 1;
+      text-align: left;
+      margin-right: 30px;
+    }
+  }
 }
 
 .nav__out {
   margin: 30px 0;
+  @include tablet {
+    margin: 0;
+  }
 }
 .items {
   text-decoration: none;
@@ -41,6 +71,7 @@
   font-size: 16px;
   line-height: 1.88;
 }
+
 .small__items {
   display: block;
   font-size: 14px;
