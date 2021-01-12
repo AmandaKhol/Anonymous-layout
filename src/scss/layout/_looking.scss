@@ -66,7 +66,7 @@
       border: solid 2px $color-button;
       color: $color-button;
       margin-bottom: 45px;
-      transition: all 0.8s ease;
+      transition: background-color 0.8s ease, color 0.8s ease;
     }
     &:hover {
       background-color: $color-button;
