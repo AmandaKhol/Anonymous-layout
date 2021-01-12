@@ -1,7 +1,7 @@
 # Módulo 1 - Evaluación final
 
 En este repositorio se encuentran los ficheros generados en la realización de la **Evaluación final del Módulo 1 - Promo L**.
-Para llevar a cabo el desarrollo de los ficheros `.html` y `.scss` se ha empleado el [Adalab - Web starter kit](https://github.com/Adalab/Adalab-web-starter-kit), creado en **node y gulp**.
+Para llevar a cabo el desarrollo de los ficheros `.html` y `.scss` se ha empleado el [Adalab - Web starter kit](https://github.com/Adalab/Adalab-web-starter-kit), creado en **node y gulp** por la asociación [Adalab](https://adalab.es/).
 
 > **NOTA:** Pueces acceder directacmente a este [enlace](http://beta.adalab.es/modulo-1-evaluacion-final-AmandaKhol/) para ver el resultado de la maquetación.
 
@@ -25,7 +25,7 @@ npm install
 npm start
 ```
 
-Este comando **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
+Este comando **Abre una ventana de Chrome y muestra la página web**, al igual que hace el plugin de VS Code Live Server (Go live).
 
 ## ¿Falta algo?
 
