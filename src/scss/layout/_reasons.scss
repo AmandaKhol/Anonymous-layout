@@ -1,0 +1,43 @@
+.reasons {
+  background-color: $color-background-main;
+  height: 624px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  text-align: center;
+  &__title {
+    grid-row: span 1;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    font-family: $font-titles;
+    font-size: 24px;
+    font-weight: bold;
+    @include typo-basics;
+    line-height: 1.25;
+    text-align: center;
+    color: $color-subtitles;
+  }
+  &__container {
+    grid-row: span 1;
+    margin-bottom: 45px;
+    &--title {
+      margin-bottom: 2px;
+      font-family: $font-titles;
+      font-size: 18px;
+      font-weight: bold;
+      @include typo-basics;
+      line-height: 1.67;
+      text-align: center;
+      color: $color-subtitles;
+    }
+    &--paragraph {
+      height: 63px;
+      font-family: $font-text;
+      font-size: 18px;
+      font-weight: normal;
+      @include typo-basics;
+      line-height: 1.67;
+      text-align: center;
+      color: $color-subtitles;
+    }
+  }
+}
