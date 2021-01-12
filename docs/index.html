@@ -23,13 +23,19 @@
 
   <body class="page">
     <header class="header">
-      <a class="header__menu" href="https://adalab.es/" target="_blank" title="Menu"
-        ><img
-          class="header__menu--image"
-          src="./assets/images/ico-menu.svg"
-          alt="menu"
-          title="Menu button"
-      /></a>
+      <nav>
+        <a
+          class="header__menu"
+          href="https://adalab.es/"
+          target="_blank"
+          title="menu"
+          ><img
+            class="header__menu--image"
+            src="./assets/images/ico-menu.svg"
+            alt="menu"
+            title="Menu button"
+        /></a>
+      </nav>
     </header>
 
     <section id="hero" class="hero">
@@ -38,7 +44,7 @@
         <span class="centralcolumn hero__title--span">proxy</span>
       </h1>
       <span class="hero__claim">In hac habitasse platea dictumst.</span>
-      <a class="hero__button" href="#reasons"
+      <a class="hero__button" href="#reasons" title="hero button"
         ><img
           class="hero__button--image"
           src="./assets/images/ico-scroll-down.svg"
@@ -56,7 +62,12 @@
             Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
             luctus ex diam nec lectus. Vivamus semper sodales rutrum.
           </p>
-          <a class="looking__container--link" href="">Go</a>
+          <a
+            class="looking__container--link"
+            href="https://adalab.es/"
+            title="Go adalab"
+            >Go</a
+          >
         </div>
       </section>
 
@@ -82,13 +93,18 @@
             </p>
           </div>
         </div>
-        <a class="section__reasons--link" href="">More reasons</a>
+        <a
+          class="section__reasons--link"
+          href="https://adalab.es/"
+          title="more reasons to adalab"
+          >More reasons</a
+        >
       </section>
 
     </main>
 
     <footer class="section__footer">
-      <a class="centralcolumn footer__button" href="#hero"
+      <a class="footer__button" href="#hero"
         ><img
           class="footer__button--image"
           src="./assets/images/ico-arrow.svg"
@@ -96,8 +112,17 @@
           titile="scroll button up"
       /></a>
       <div class="centralcolumn footer__container">
-        <nav class="footer__container--nav">
-          <ul class="nav__in">
+        <nav class="footer__nav">
+          <ul class="footer__nav--in">
+            <li>
+              <a
+                class="items"
+                href="https://adalab.es/"
+                target="_blank"
+                title="articles"
+                >Articles</a
+              >
+            </li>
             <li>
               <a
                 class="items"
@@ -134,17 +159,8 @@
                 >Tips</a
               >
             </li>
-            <li>
-              <a
-                class="items"
-                href="https://adalab.es/"
-                target="_blank"
-                title="articles"
-                >Articles</a
-              >
-            </li>
           </ul>
-          <ul class="nav__out">
+          <ul class="footer__nav--out">
             <li>
               <a
                 class="items"
