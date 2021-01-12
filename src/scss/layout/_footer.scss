@@ -79,6 +79,22 @@
   border-radius: 22.5px;
   background-color: $color-title;
 
+  @keyframes intro {
+    0% {
+      background-color: $color-title;
+    }
+    50% {
+      background-color: $color-button;
+    }
+    100% {
+      background-color: $color-title;
+    }
+  }
+
+  animation-name: intro;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
   &--image {
     height: 24px;
     width: 20.6px;

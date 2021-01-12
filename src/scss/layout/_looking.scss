@@ -66,6 +66,11 @@
       border: solid 2px $color-button;
       color: $color-button;
       margin-bottom: 45px;
+      transition: all 0.8s ease;
+    }
+    &:hover {
+      background-color: $color-button;
+      color: $color-title;
     }
     @include tablet() {
       width: 91px;

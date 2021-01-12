@@ -18,6 +18,7 @@
 
 @mixin button-links($link_width) {
   box-sizing: border-box;
+  border: solid 2px $color-button;
   width: $link_width;
   border-radius: 22.5px;
   height: 45px;
@@ -29,6 +30,5 @@
   text-align: center;
   text-decoration: none;
   @include typo-basics();
-
   @content;
 }

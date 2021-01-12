@@ -37,6 +37,12 @@
     @include button-links(184px) {
       background-color: $color-button;
       color: $color-title;
+      transition: all 0.8s ease;
+    }
+
+    &:hover {
+      background-color: $color-title;
+      color: $color-button;
     }
     @include tablet() {
       width: 210px;
