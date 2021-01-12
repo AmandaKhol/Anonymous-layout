@@ -1,0 +1,17 @@
+.hero__button,
+.footer__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  margin-bottom: 53px;
+  border-radius: 22.5px;
+  background-color: $color-title;
+  @include tablet() {
+    margin-bottom: 45px;
+  }
+  @include desktop() {
+    margin-bottom: 13px;
+  }
+}

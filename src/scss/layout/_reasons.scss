@@ -1,6 +1,8 @@
 .section__reasons {
   background-color: $color-background-main;
   height: 624px;
+  box-sizing: border-box;
+  padding: 30px 0 60px 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -10,6 +12,7 @@
   }
   @include desktop() {
     height: 427px;
+    padding-top: 60px;
   }
   &--title {
     margin-bottom: 45px;
@@ -33,7 +36,6 @@
     @include button-links(184px) {
       background-color: $color-button;
       color: $color-title;
-      margin-bottom: 60px;
     }
     @include tablet() {
       width: 210px;
@@ -45,7 +47,6 @@
 }
 
 .reasons__container {
-  margin: 0 55px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
@@ -53,19 +54,19 @@
   @include tablet() {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    margin: 0;
+    gap: 27.7px;
   }
   @include desktop() {
     margin: 0 85px;
+    gap: 26.2px;
   }
 
   &--card {
     grid-row: span 1;
-    width: 100%;
-    margin-bottom: 45px;
+    margin: 0 55px 45px 55px;
     text-align: center;
     @include tablet() {
-      margin-bottom: 60px;
+      margin: 0 0 60px 0;
     }
   }
 
@@ -83,10 +84,12 @@
       font-size: 24px;
       line-height: 1.25;
     }
+    @include desktop() {
+      font-size: 24px;
+    }
   }
   &--paragraph {
     height: 63px;
-    margin: 0 55px;
     font-family: $font-text;
     font-size: 18px;
     font-weight: normal;
@@ -94,8 +97,9 @@
     line-height: 1.67;
     text-align: center;
     color: $color-subtitles;
-    @include tablet() {
-      height: 68px;
+    @include desktop() {
+      line-height: 1.5;
+      padding: 0 50px;
     }
   }
 }
