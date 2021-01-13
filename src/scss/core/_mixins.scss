@@ -1,3 +1,4 @@
+/* Mixins for media queries */
 @mixin tablet {
   @media all and (min-width: 768px) {
     @content;
@@ -10,11 +11,14 @@
   }
 }
 
+/* Typography mixin */
 @mixin typo-basics {
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
 }
+
+/* Hero and footer button mixin */
 
 @mixin button-links($link_width) {
   box-sizing: border-box;

@@ -1,7 +1,15 @@
+/* Hero styles. Background photo and h1 and claim */
+
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url("../images/cover.jpg");
+  background-blend-mode: multiply;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 25%,
+      #000000
+    ),
+    url("../images/cover.jpg");
   background-size: cover;
   background-position-x: center;
   color: $color-title;

@@ -1,4 +1,6 @@
-.section__footer {
+/* Footer styles */
+
+.footer {
   position: relative;
   box-sizing: border-box;
   background-color: $color-background-footer;
@@ -8,63 +10,98 @@
     padding: 45px 0;
     height: 240px;
   }
-}
 
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  text-align: center;
-  color: $color-basic;
-  text-align: center;
-  @include tablet() {
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    /*    justify-content: space-between; */
-  }
-  @include desktop {
-    margin: 0 370px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    color: $color-basic;
+    text-align: center;
+    @include tablet() {
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+    @include desktop {
+      margin: 0 370px;
+    }
   }
 
-  &--small {
+  &__nav {
+    @include tablet() {
+      flex-grow: 2;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      text-align: left;
+    }
+    @include desktop {
+      justify-content: space-between;
+    }
+    &--in {
+      @include tablet {
+        width: calc(100% - 30px);
+      }
+      @include desktop {
+        width: 100%;
+        margin: 0 0 0 30px;
+      }
+    }
+    &--out {
+      margin: 30px 0;
+      @include tablet {
+        width: calc(100% - 30px);
+        margin: 0 0 0 30px;
+      }
+      @include desktop {
+        width: 100%;
+        margin: 0 0 0 30px;
+      }
+    }
+  }
+  &__button {
+    position: absolute;
+    top: -22.5px;
+    left: calc(50% - 22.5px);
+    z-index: 3;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    background-color: $color-basic;
+
+    @keyframes intro {
+      0% {
+        background-color: $color-basic;
+      }
+      50% {
+        background-color: $color-button;
+      }
+    }
+    animation-name: intro;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+    &--image {
+      height: 24px;
+      width: 20.6px;
+    }
+  }
+  &__small {
     @include tablet() {
       flex-grow: 1;
       text-align: left;
       margin-right: 30px;
     }
-  }
-}
-.footer__nav {
-  @include tablet() {
-    /*     margin-left: 30px; */
-    flex-grow: 2;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    text-align: left;
-  }
-  @include desktop {
-    justify-content: space-between;
-  }
-  &--in {
-    @include tablet {
-      width: calc(100% - 30px);
-    }
-    @include desktop {
-      width: 100%;
-      margin: 0 0 0 30px;
-    }
-  }
-  &--out {
-    margin: 30px 0;
-    @include tablet {
-      width: calc(100% - 30px);
-      margin: 0 0 0 30px;
-    }
-    @include desktop {
-      width: 100%;
-      margin: 0 0 0 30px;
+    &--copy,
+    &--close {
+      display: block;
+      font-size: 14px;
+      line-height: 2.14;
     }
   }
 }
@@ -77,45 +114,6 @@
   line-height: 1.88;
 }
 
-.small__items {
-  display: block;
-  font-size: 14px;
-  line-height: 2.14;
-}
-
 .heart {
   color: $color-button;
-}
-
-.footer__button {
-  position: absolute;
-  top: -22.5px;
-  left: calc(50% - 22.5px);
-  z-index: 3;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 45px;
-  height: 45px;
-  /*   transform: translate(0, -82.5px); */
-  border-radius: 22.5px;
-  background-color: $color-basic;
-
-  @keyframes intro {
-    0% {
-      background-color: $color-basic;
-    }
-    50% {
-      background-color: $color-button;
-    }
-  }
-  animation-name: intro;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-
-  &--image {
-    height: 24px;
-    width: 20.6px;
-  }
 }
