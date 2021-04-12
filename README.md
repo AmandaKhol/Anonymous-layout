@@ -1,32 +1,26 @@
-# Módulo 1 - Evaluación final.
+# Anonymous Layout - HTML, SASS
 
-En este repositorio se encuentran los ficheros generados en la realización de la **Evaluación final del Módulo 1 - Promo L**.
-Para llevar a cabo el desarrollo de los ficheros `.html` y `.scss` se ha empleado el [Adalab - Web starter kit](https://github.com/Adalab/Adalab-web-starter-kit), creado en **node y gulp** por la asociación [Adalab](https://adalab.es/).
+The main goal of this project is to create a responsive layout.
+This project uses the [Adalab - Web starter kit](https://github.com/Adalab/Adalab-web-starter-kit), usiing **node y gulp** by [Adalab](https://adalab.es/).
 
-> **NOTA:** Pueces acceder directacmente a este [enlace](http://beta.adalab.es/modulo-1-evaluacion-final-AmandaKhol/) para ver el resultado de la maquetación.
+## This project includes
 
-## Guía de inicio rápido
+- HTML
+- SASS
+- Grid layout
+- Animations
 
-> **NOTA:** Necesitas tener instalado [NodeJS](https://nodejs.org/en//)
+### Run this project in your local:
 
-### Pasos a seguir para arrancar la web en local:
-
-1. Clona este repositorio
-2. Realizar la instalación de las dependencias mediante:
+1. Clone
+2. Install the dependencies:
 
 ```bash
 npm install
 ```
 
-3. Una vez finalizada la instalación de dependencias aparecerá una carpeta denominada `node_modules/`.
-4. Por último, ejecuta el siguiente comando para proceder a la visualización:
+3. Run the code:
 
 ```bash
 npm start
 ```
-
-Este comando **Abre una ventana de Chrome y muestra la página web**, al igual que hace el plugin de VS Code Live Server (Go live).
-
-## ¿Has encontrado algún error?
-
-Si has detectado un problema o quieres hacer una aportación, puedes realizar una PR.
